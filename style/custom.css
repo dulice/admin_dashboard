@@ -60,5 +60,6 @@
     position: fixed;
     z-index: 2031;
     background-color: white;
+    margin-left: -100%;
   }
 }

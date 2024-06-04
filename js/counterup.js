@@ -64,14 +64,21 @@ const myChart = new Chart(lineChart, {
         legend: {
             labels: {
                 usePointStyle: true
-            }
+            },
+            display: true
         },
         elements: {
             line: {
-                tension: 0
-            }
+                tension: 0.3,
+                // stepped: true
+            },
+            point: {
+                radius: 1,
+                hoverRadius: 10,
+                pointStyle: 'triangle'
+            },
         },
-        scales: {
+        scales: {          
             yAxes: [{
                 display: false,
             }],
